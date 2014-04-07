@@ -1,0 +1,118 @@
+\hypertarget{class_main_window}{\section{Main\-Window Class Reference}
+\label{class_main_window}\index{Main\-Window@{Main\-Window}}
+}
+
+
+Main window of the application, implements view and user actions inherits from Q\-Main\-Window.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\-h$>$}
+
+Inheritance diagram for Main\-Window\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_window}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_ad51fc5f7e60f54755507a04190f94891}{value\-To\-Send} (Q\-String val)
+\begin{DoxyCompactList}\small\item\em signal emiting on user action which need to be sent to the server \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{Main\-Window} (Q\-Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em main constructor \end{DoxyCompactList}\item 
+\hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\-Main\-Window} ()}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}
+
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_main_window_aea3e97d7cd92a03e10cba58c85156b4c}{void \hyperlink{class_main_window_aea3e97d7cd92a03e10cba58c85156b4c}{on\-\_\-menu\-Button\-\_\-clicked} ()}\label{class_main_window_aea3e97d7cd92a03e10cba58c85156b4c}
+
+\begin{DoxyCompactList}\small\item\em callback when user click on menu button \end{DoxyCompactList}\item 
+\hypertarget{class_main_window_af06ad081f0229a31ae29a0e328e72d3b}{void \hyperlink{class_main_window_af06ad081f0229a31ae29a0e328e72d3b}{on\-\_\-x\-Plus\-Button\-\_\-clicked} ()}\label{class_main_window_af06ad081f0229a31ae29a0e328e72d3b}
+
+\begin{DoxyCompactList}\small\item\em callback which emit a Qt signal when user click on X+ button \end{DoxyCompactList}\item 
+\hypertarget{class_main_window_add37926ce0c9d9aa48a1c8e482b097e4}{void \hyperlink{class_main_window_add37926ce0c9d9aa48a1c8e482b097e4}{on\-\_\-x\-Minus\-Button\-\_\-clicked} ()}\label{class_main_window_add37926ce0c9d9aa48a1c8e482b097e4}
+
+\begin{DoxyCompactList}\small\item\em callback which emit a Qt signal when user click on X-\/ button \end{DoxyCompactList}\item 
+\hypertarget{class_main_window_a9d41c294dace3074c72ec6f8bd452fd0}{void \hyperlink{class_main_window_a9d41c294dace3074c72ec6f8bd452fd0}{on\-\_\-y\-Plus\-Button\-\_\-clicked} ()}\label{class_main_window_a9d41c294dace3074c72ec6f8bd452fd0}
+
+\begin{DoxyCompactList}\small\item\em callback which emit a Qt signal when user click on Y+ button \end{DoxyCompactList}\item 
+\hypertarget{class_main_window_ae4af2cd51d482b1009bb688ce49fe0bd}{void \hyperlink{class_main_window_ae4af2cd51d482b1009bb688ce49fe0bd}{on\-\_\-y\-Minus\-Button\-\_\-clicked} ()}\label{class_main_window_ae4af2cd51d482b1009bb688ce49fe0bd}
+
+\begin{DoxyCompactList}\small\item\em callback which emit a Qt signal when user click on Y-\/ button \end{DoxyCompactList}\item 
+\hypertarget{class_main_window_a898da68c8a89a6f3d696eb58efe8020d}{void \hyperlink{class_main_window_a898da68c8a89a6f3d696eb58efe8020d}{on\-\_\-z\-Plus\-Button\-\_\-clicked} ()}\label{class_main_window_a898da68c8a89a6f3d696eb58efe8020d}
+
+\begin{DoxyCompactList}\small\item\em callback which emit a Qt signal when user click on Z+ button \end{DoxyCompactList}\item 
+\hypertarget{class_main_window_a6c0c09ab43457ec6458127f012c0657f}{void \hyperlink{class_main_window_a6c0c09ab43457ec6458127f012c0657f}{on\-\_\-z\-Minus\-Button\-\_\-clicked} ()}\label{class_main_window_a6c0c09ab43457ec6458127f012c0657f}
+
+\begin{DoxyCompactList}\small\item\em callback which emit a Qt signal when user click on Z-\/ button \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\-::\-Main\-Window $\ast$ \hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}
+\item 
+\hyperlink{class_user_data}{User\-Data} $\ast$ \hyperlink{class_main_window_a5ad62f9757137d68b2b49bae414c4fdd}{user}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main window of the application, implements view and user actions inherits from Q\-Main\-Window. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{\index{Main\-Window@{Main\-Window}!Main\-Window@{Main\-Window}}
+\index{Main\-Window@{Main\-Window}!MainWindow@{Main\-Window}}
+\subsubsection[{Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Main\-Window\-::\-Main\-Window (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}
+
+
+main constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & the parent creating the window (no parent in our caseà \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_main_window_ad51fc5f7e60f54755507a04190f94891}{\index{Main\-Window@{Main\-Window}!value\-To\-Send@{value\-To\-Send}}
+\index{value\-To\-Send@{value\-To\-Send}!MainWindow@{Main\-Window}}
+\subsubsection[{value\-To\-Send}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::value\-To\-Send (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [signal]}}}\label{class_main_window_ad51fc5f7e60f54755507a04190f94891}
+
+
+signal emiting on user action which need to be sent to the server 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & the string to emit \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5}{\index{Main\-Window@{Main\-Window}!ui@{ui}}
+\index{ui@{ui}!MainWindow@{Main\-Window}}
+\subsubsection[{ui}]{\setlength{\rightskip}{0pt plus 5cm}Ui\-::\-Main\-Window$\ast$ Main\-Window\-::ui\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a35466a70ed47252a0191168126a352a5}
+pointer on the Qt U\-I \hypertarget{class_main_window_a5ad62f9757137d68b2b49bae414c4fdd}{\index{Main\-Window@{Main\-Window}!user@{user}}
+\index{user@{user}!MainWindow@{Main\-Window}}
+\subsubsection[{user}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User\-Data}$\ast$ Main\-Window\-::user\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a5ad62f9757137d68b2b49bae414c4fdd}
+pointer on the user's data 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\-h\item 
+mainwindow.\-cpp\end{DoxyCompactItemize}

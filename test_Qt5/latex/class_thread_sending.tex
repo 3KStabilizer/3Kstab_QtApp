@@ -1,0 +1,89 @@
+\hypertarget{class_thread_sending}{\section{Thread\-Sending Class Reference}
+\label{class_thread_sending}\index{Thread\-Sending@{Thread\-Sending}}
+}
+
+
+thread establishing connection with server and sends data to the server inherits from Q\-Thread  
+
+
+
+
+{\ttfamily \#include $<$serverthread.\-h$>$}
+
+Inheritance diagram for Thread\-Sending\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_thread_sending}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_thread_sending_aae57341ed5f031338c6ba10f35d277c5}{add\-Value\-To\-List} (Q\-String val)
+\begin{DoxyCompactList}\small\item\em the slot which receives signals sent by \hyperlink{class_main_window}{Main\-Window} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_thread_sending_abdd5e874ce261b64bde9066e4369904f}{\hyperlink{class_thread_sending_abdd5e874ce261b64bde9066e4369904f}{Thread\-Sending} ()}\label{class_thread_sending_abdd5e874ce261b64bde9066e4369904f}
+
+\begin{DoxyCompactList}\small\item\em constructor, initiliaze I\-P and port \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_thread_sending_a5f3612a36c9fb8a1861665aeb2c3f60b}{void \hyperlink{class_thread_sending_a5f3612a36c9fb8a1861665aeb2c3f60b}{run} ()}\label{class_thread_sending_a5f3612a36c9fb8a1861665aeb2c3f60b}
+
+\begin{DoxyCompactList}\small\item\em method call when the thread starts \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-String \hyperlink{class_thread_sending_aeb557d91ac550a8efce1d43e130392f8}{server\-I\-P}
+\item 
+int \hyperlink{class_thread_sending_aa97703aeda03c6a18b2f300558ba5ae0}{port\-Write}
+\item 
+Q\-List$<$ Q\-String $>$ \hyperlink{class_thread_sending_a381edbf0d9460a47a9a75a27c3918ae6}{to\-Send}
+\item 
+Q\-Mutex \hyperlink{class_thread_sending_acf56dd5ae4ee3ac319e93307c6ef74ea}{mutex}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+thread establishing connection with server and sends data to the server inherits from Q\-Thread 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_thread_sending_aae57341ed5f031338c6ba10f35d277c5}{\index{Thread\-Sending@{Thread\-Sending}!add\-Value\-To\-List@{add\-Value\-To\-List}}
+\index{add\-Value\-To\-List@{add\-Value\-To\-List}!ThreadSending@{Thread\-Sending}}
+\subsubsection[{add\-Value\-To\-List}]{\setlength{\rightskip}{0pt plus 5cm}void Thread\-Sending\-::add\-Value\-To\-List (
+\begin{DoxyParamCaption}
+\item[{Q\-String}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}}\label{class_thread_sending_aae57341ed5f031338c6ba10f35d277c5}
+
+
+the slot which receives signals sent by \hyperlink{class_main_window}{Main\-Window} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & the string emitted \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_thread_sending_acf56dd5ae4ee3ac319e93307c6ef74ea}{\index{Thread\-Sending@{Thread\-Sending}!mutex@{mutex}}
+\index{mutex@{mutex}!ThreadSending@{Thread\-Sending}}
+\subsubsection[{mutex}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Mutex Thread\-Sending\-::mutex\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_sending_acf56dd5ae4ee3ac319e93307c6ef74ea}
+mutex used to avoid concurrent access on list \hypertarget{class_thread_sending_aa97703aeda03c6a18b2f300558ba5ae0}{\index{Thread\-Sending@{Thread\-Sending}!port\-Write@{port\-Write}}
+\index{port\-Write@{port\-Write}!ThreadSending@{Thread\-Sending}}
+\subsubsection[{port\-Write}]{\setlength{\rightskip}{0pt plus 5cm}int Thread\-Sending\-::port\-Write\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_sending_aa97703aeda03c6a18b2f300558ba5ae0}
+the port where it connects \hypertarget{class_thread_sending_aeb557d91ac550a8efce1d43e130392f8}{\index{Thread\-Sending@{Thread\-Sending}!server\-I\-P@{server\-I\-P}}
+\index{server\-I\-P@{server\-I\-P}!ThreadSending@{Thread\-Sending}}
+\subsubsection[{server\-I\-P}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String Thread\-Sending\-::server\-I\-P\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_sending_aeb557d91ac550a8efce1d43e130392f8}
+the I\-P of the server \hypertarget{class_thread_sending_a381edbf0d9460a47a9a75a27c3918ae6}{\index{Thread\-Sending@{Thread\-Sending}!to\-Send@{to\-Send}}
+\index{to\-Send@{to\-Send}!ThreadSending@{Thread\-Sending}}
+\subsubsection[{to\-Send}]{\setlength{\rightskip}{0pt plus 5cm}Q\-List$<$Q\-String$>$ Thread\-Sending\-::to\-Send\hspace{0.3cm}{\ttfamily [private]}}}\label{class_thread_sending_a381edbf0d9460a47a9a75a27c3918ae6}
+list of data to send 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+serverthread.\-h\item 
+serverthread.\-cpp\end{DoxyCompactItemize}

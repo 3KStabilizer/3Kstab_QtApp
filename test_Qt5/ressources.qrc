@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/html/ressources">
+        <file>stream-example-standalone.html</file>
+    </qresource>
+</RCC>
